@@ -3,3 +3,10 @@
     cursor: pointer;
     transition: transform 0.2s;
 }
+
+@media (max-width: 960px){
+    .fadeInDown{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
