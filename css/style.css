@@ -361,10 +361,5 @@ form{
     align-items: center;
     }
 
-    .wow{
-        animation-name: none !important;
-        visibility: visible !important;
-    }
-
 }
 /*---------------------------------*/
