@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lambda Store - Merchandising</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
  <div class="container3">
     <nav id="nav">
         <ul>
-            <li>
+            <li class="scale">
                 <a href="index.html">Inicio</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="productos.html">Productos</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="nosotros.html">Quiénes somos</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="contacto.html">Contacto</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="envio.html">Formas de envío</a>
             </li>
         </ul>
@@ -32,7 +34,7 @@
             <img src="img/icons/cart.png" alt="Carrito">
         </div>
     </nav>
-    <div id="title">
+    <div id="title" class="wow fadeInLeft">
         <a href="index.html">
             <img src="img/lambda logo.png" alt="logo Lambda Store" class="logoSize">
         </a>
@@ -48,7 +50,7 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="wow fadeInUp">
         <div>
             <h3>Contacto</h3>
             <div class="alignContacto">
@@ -78,5 +80,14 @@
             </a>
         </div>
     </footer>
+    
+<script src="js/wow.min.js"></script>
+<script>
+new WOW({       
+    mobile: false,
+}
+).init();
+</script>
+
 </body>
 </html>

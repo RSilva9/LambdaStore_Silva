@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lambda Store - Merchandising</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
  <div class="container">
     <nav id="nav">
         <ul>
-            <li>
+            <li class="scale">
                 <a href="index.html">Inicio</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="productos.html">Productos</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="nosotros.html">Quiénes somos</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="contacto.html">Contacto</a>
             </li>
-            <li>
+            <li class="scale">
                 <a href="envio.html">Formas de envío</a>
             </li>
         </ul>
@@ -32,13 +34,13 @@
             <img src="img/icons/cart.png" alt="Carrito">
         </div>
     </nav>
-    <div id="title">
+    <div id="title" class="wow fadeInLeft">
         <a href="index.html">
             <img src="img/lambda logo.png" alt="logo Lambda Store">
         </a>
         <h1>Lambda Store</h1>
     </div>
-    <header id="header">
+    <header id="header" class="wow fadeIn">
         <img src="img/prodpreview.jpg" alt="Vista previa productos" class="imgShadow">
     </header>
     <div id="botoneraProds">
@@ -53,35 +55,35 @@
     </div>
     <main id="products">
         <section>
-            <div class="card">
+            <div class="card wow fadeInDown" data-wow-delay="0.5s">
                 <img src="img/products/campera_001.png" alt="Campresa Gris Black Mesa" class="productPic">
                 <div class="containerPadding">
                     <h4>Campresa gris - Black Mesa</h4>
                     <p>$7000</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow fadeInDown" data-wow-delay="0.7s">
                 <img src="img/products/gorra_101.jpg" alt="Gorra blanca Aperture Science" class="productPic">
                 <div class="containerPadding">
                     <h4>Gorra blanca - Aperture Science</h4>
                     <p>$1500</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow fadeInDown" data-wow-delay="0.9s">
                 <img src="img/products/taza_201.jpg" alt="Taza Lambda" class="productPic">
                 <div class="containerPadding">
                     <h4>Taza - Lambda</h4>
                     <p>$500</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow fadeInDown" data-wow-delay="1.1s">
                 <img src="img/products/remera_401.png" alt="Remera Nope tf2" class="productPic">
                 <div class="containerPadding">
                     <h4>Remera - Nope TF2</h4>
                     <p>$2300</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow fadeInDown" data-wow-delay="1.3s">
                 <img src="img/products/mousepad_301.png" alt="Mousepad Hyperbeast CSGO" class="productPic">
                 <div class="containerPadding">
                     <h4>Mousepad - Hyperbeast CSGO</h4>
@@ -93,7 +95,7 @@
     <div id="verMas">
         <a href="productos.html" class="button">Ver más</a>
     </div>
-    <footer id="footer">
+    <footer id="footer" class="wow fadeInUp">
         <div>
             <h3>Contacto</h3>
             <div class="alignContacto">
@@ -124,5 +126,14 @@
         </div>
     </footer>
  </div>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW({       
+    mobile: false,
+}
+).init();
+</script>
+
 </body>
 </html>
