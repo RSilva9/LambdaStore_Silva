@@ -4,6 +4,8 @@
     transition: transform 0.2s;
 }
 
+
+/*Desactiva animación fadeInDown de mobile para mejor visualización*/
 @media (max-width: 960px){
     .fadeInDown{
         animation-name: none !important;
