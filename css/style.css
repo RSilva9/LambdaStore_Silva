@@ -46,6 +46,7 @@ h1{
 }
     #nprods{
         grid-area: nprods;
+        font-family: 'Rubik', sans-serif;
     }
     #btnProds{
         grid-area: btnProds;
@@ -61,11 +62,6 @@ h1{
     background-color: rgba(98, 255, 242, 0.212);
 }
 
-#prodsContainer{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 /*----------------------------------*/
 
 /*Footer ---------------------------*/
@@ -77,6 +73,10 @@ footer{
     background-repeat: no-repeat;
     font-family: 'Rubik', sans-serif;
     margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+
 }
     footer img{
         width: 50px;
@@ -105,7 +105,7 @@ footer{
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    margin: 10px 0px;
+    margin: 5px auto;
   }
 
 .containerPadding{
@@ -186,32 +186,26 @@ form{
     justify-content: center;
 }
 
+.hideItem{
+    display: block;
+}
+
 /*Media Queries--------------------*/
 
-@media (max-width: 1200px){
-    .cCard {
-        min-width: 250px;
-        max-width: 250px;
+@media (max-width: 1500px){
+    .hideItem{
+        display: none;
     }
 }
 
-@media (max-width: 768px){
-    .cCard {
-        min-width: 350px;
-        max-width: 350px;
+@media (max-width: 990px){
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
-}
-
-@media (max-width: 700px){
-    .cCard {
-        min-width: 400px;
-        max-width: 400px;
-    }
-
-    .mediosDePagoSize{
-        height: 200px;
-        width: 325px;
-    }
+        footer div{
+            margin-bottom: 10px;
+        }
 }
 
 @media (max-width: 600px){
@@ -219,12 +213,11 @@ form{
         justify-content: center;
         margin: 0px;
     }
-}
 
-@media (max-width: 400px){
-    .cCard {
-        min-width: 350px;
-        max-width: 350px;
+    .mediosDePagoSize{
+        width: 100%;
+        height: auto;
     }
 }
+
 /*---------------------------------*/
