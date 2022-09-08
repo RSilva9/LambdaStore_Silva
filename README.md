@@ -9,4 +9,4 @@ Proyecto tienda online "Lambda Store". Productos de merchandising relacionados a
 
 **08/09**
 - Agregado Navbar, Carousel, Form y otros elementos de Bootstrap.
-- Eliminado grid usado para entrega anterior.
+- Eliminado grid usado para entrega anterior y reemplazado por sistema de grillas de Bootstrap.
