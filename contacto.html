@@ -5,59 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <title>Lambda Store - Merchandising</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
- <div class="container3">
-    <nav id="nav">
-        <ul>
-            <li class="scale">
-                <a href="index.html">Inicio</a>
-            </li>
-            <li class="scale">
-                <a href="productos.html">Productos</a>
-            </li>
-            <li class="scale">
-                <a href="nosotros.html">Quiénes somos</a>
-            </li>
-            <li class="scale">
-                <a href="contacto.html">Contacto</a>
-            </li>
-            <li class="scale">
-                <a href="envio.html">Formas de envío</a>
-            </li>
-        </ul>
-        <div>
-            <img src="img/icons/search.png" alt="Buscar">
-            <img src="img/icons/cart.png" alt="Carrito">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg sticky-top lightblueColor">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="envio.html">Formas de envío</a>
+                </li>
+            </ul>
+            <div>
+                <img src="img/icons/search.png" alt="Buscar">
+                <img src="img/icons/cart.png" alt="Carrito">
+            </div>
+            </div>
         </div>
-    </nav>
-    <div id="title" class="wow fadeInLeft">
+    </nav> <!-- Navbar End -->
+
+    <!-- Title Start -->
+    <div class="wow fadeInLeft my-3" id="titleContainer">
         <a href="index.html">
-            <img src="img/lambda logo.png" alt="logo Lambda Store">
+            <img src="img/lambda logo.png" alt="logo Lambda Store" class="logoSize">
         </a>
         <h1>Lambda Store</h1>
-    </div>
-    <main id="header">
+    </div> <!-- Title End -->
+
+    <main>
         <section>
-            <p>
-                Ante cualquier queja, duda, consulta o sugerencia, podés contactarte mediante el siguiente formulario:
-            </p>
-            <form action="envio.php">
-                <div>
-                Nombre:<input type="text" id="nombre" required>
-                Correo electrónico:<input type="email" id="email" required>
-                Teléfono:<input type="tel" id="tel">
-                Dejanos tu mensaje:<textarea name="" id="comentario" required></textarea>
-                </div>
-                <input type="reset" value="Borrar todo">
-                <input type="submit" value="Enviar">
-            </form>
+            <div class="mx-5">
+                <p class="bold">
+                    Ante cualquier queja, duda, consulta o sugerencia, podés contactarte mediante el siguiente formulario:
+                </p>
+            </div>
+            <div class="container">
+                <div class="row mx-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Nombre:</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="exampleInputTel1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMessage1" class="form-label">Dejanos tu mensaje:</label>
+                            <input type="tel" class="form-control" id="exampleInputTel1">
+                            </div>
+                        <button type="submit" class="button lightblueColor">Submit</button>
+                        </form>
+                </div>  
+            </div>
         </section>
     </main>
-    <footer id="footer" class="wow fadeInUp">
+    
+    <footer class="wow fadeInUp container-fluid">
         <div>
             <h3>Contacto</h3>
             <div class="alignContacto">
@@ -87,12 +114,13 @@
             </a>
         </div>
     </footer>
- </div>
  
- <script src="js/wow.min.js"></script>
- <script>
- new WOW().init();
- </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 </html>
