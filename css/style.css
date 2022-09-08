@@ -61,7 +61,39 @@ h1{
     border-width: 1px;
     background-color: rgba(98, 255, 242, 0.212);
 }
+/*----------------------------------*/
 
+/*Nosotros -------------------------*/
+.nHeaderContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+}
+    .nHeaderContainer img{
+        width: 100%;
+    }
+    .nHeaderContainer h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .nHeaderContainer p{
+        font-family: 'Rubik', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+/*----------------------------------*/
+
+/*Envío ----------------------------*/
+.envioContainer{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px 4rem;
+}
+    .envioContainer img{
+        width: 100%;
+    }
 /*----------------------------------*/
 
 /*Footer ---------------------------*/
@@ -91,11 +123,9 @@ footer{
     height: 300px;
     width: 425px;
 }
-
 /*----------------------------------*/
 
 /*Card -----------------------------*/
-
 .cCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     min-width: 300px;
@@ -118,27 +148,16 @@ footer{
     height: 60%;
     object-fit: contain;
 }
-
 /*----------------------------------*/
 
 /*Form-----------------------------*/
 form{
-    max-width: 910px;
-    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    background-color: rgba(98, 255, 242, 0.212);
 }
-    form div{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-        form div input{
-            width: 300px;
-            margin-bottom: 10px;
-        }
-            form div textarea{
-                width: 50vw;
-                height: 10vh;
-            }
 /*---------------------------------*/
 
 .imgShadow{
@@ -169,6 +188,13 @@ form{
     display: block;
 }
 
+.bold{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
 /*Media Queries--------------------*/
 
 @media (max-width: 1500px){
@@ -196,6 +222,18 @@ form{
     .mediosDePagoSize{
         width: 100%;
         height: auto;
+    }
+
+    .nHeaderContainer{
+        margin: 3rem 5px;
+    }
+        .nHeaderContainer p{
+            font-size: 18px;
+        }
+
+    .envioContainer{
+        font-size: 20px;
+        margin: 5px;
     }
 }
 
