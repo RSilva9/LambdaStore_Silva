@@ -12,36 +12,47 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top lightblueColor">
+    <nav class="navbar navbar-expand-lg sticky-top lightblueColor" id="selector">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="envio.html">Formas de envío</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="envio.html">Formas de envío</a>
+                    </li>
+                </ul>
+            </div>
             <div>
                 <img src="img/icons/search.png" alt="Buscar">
                 <img src="img/icons/cart.png" alt="Carrito">
             </div>
-            </div>
         </div>
     </nav> <!-- Navbar End -->
+
+    <!-- Second Navbar Start -->
+    <nav class="navbar lightblueColor d-md-block d-lg-none">
+        <div class="container-fluid">
+            <form class="d-flex ms-auto" id="navSearch" role="search">
+                <input class="form-control m-2" type="search" placeholder="" aria-label="Search">
+                <button class="button" type="submit"><img src="img/icons/search.png" alt="Buscar"></button>
+            </form>
+        </div>
+    </nav> <!-- Second Navbar End -->
+
 
     <!-- Title Start -->
     <div class="wow fadeInLeft my-3" id="titleContainer">
@@ -54,13 +65,13 @@
     <!-- Header Start -->
     <header id="carouselExampleSlidesOnly" class="carousel slide mb-4 imgShadow wow fadeIn" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="8000">
+            <div class="carousel-item active" data-bs-interval="7000">
             <img src="img/prodpreview.jpg" class="d-block w-100" alt="Vista previa productos">
             </div>
-            <div class="carousel-item" data-bs-interval="8000">
+            <div class="carousel-item" data-bs-interval="7000">
             <img src="img/prodpreview2.jpg" class="d-block w-100" alt="Vista previa productos">
             </div>
-            <div class="carousel-item" data-bs-interval="8000">
+            <div class="carousel-item" data-bs-interval="7000">
             <img src="img/prodpreview3.jpg" class="d-block w-100" alt="Vista previa productos">
             </div>
         </div>
@@ -68,7 +79,7 @@
 
     <!-- Botonera Productos Start -->
     <div class="btnProdsContainer">
-        <h2 class="productosBorder centerText mx-5" id="nprods">Nuestros productos</h2>
+        <h2 class="productosBorder centerText mx-5 lightblueColor" id="nprods">Nuestros productos</h2>
         <div id="btnProds">
             <p class="button">Remeras</p>
             <p class="button">Buzos</p>
@@ -80,36 +91,36 @@
 
     <main> <!-- Productos Start -->
         <section class="mb-3 container-fluid">
-            <div class="row">
-                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3" dasta-wow-delay="0.2s">
+            <div class="row d-flex justify-content-center">
+                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 m-1" dasta-wow-delay="0.2s">
                     <img src="img/products/campera_001.png" alt="Campresa Gris Black Mesa" class="productPic">
                     <div class="containerPadding">
                         <h4>Campresa gris - Black Mesa</h4>
                         <p>$7000</p>
                     </div>
                 </article>
-                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3" data-wow-delay="0.4s">
+                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 m-1" data-wow-delay="0.4s">
                     <img src="img/products/gorra_101.jpg" alt="Gorra blanca Aperture Science" class="productPic">
                     <div class="containerPadding">
                         <h4>Gorra blanca - Aperture Science</h4>
                         <p>$1500</p>
                     </div>
                 </article>
-                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3" data-wow-delay="0.6s">
+                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 m-1" data-wow-delay="0.6s">
                     <img src="img/products/taza_201.jpg" alt="Taza Lambda" class="productPic">
                     <div class="containerPadding">
                         <h4>Taza - Lambda</h4>
                         <p>$500</p>
                     </div>
                 </article>
-                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3" data-wow-delay="0.8s">
+                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 m-1" data-wow-delay="0.8s">
                     <img src="img/products/remera_401.png" alt="Remera Nope tf2" class="productPic">
                     <div class="containerPadding">
                         <h4>Remera - Nope TF2</h4>
                         <p>$2300</p>
                     </div>
                 </article>
-                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 hideItem" data-wow-delay="1.0s">
+                <article class="cCard wow fadeInDown col-sm-12 col-md-6 col-lg-3 m-1 hideItem" data-wow-delay="1.0s">
                     <img src="img/products/mousepad_301.png" alt="Mousepad Hyperbeast CSGO" class="productPic">
                     <div class="containerPadding">
                         <h4>Mousepad - Hyperbeast CSGO</h4>

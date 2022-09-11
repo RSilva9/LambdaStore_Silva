@@ -12,36 +12,46 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top lightblueColor">
+    <nav class="navbar navbar-expand-lg sticky-top lightblueColor" id="selector">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="envio.html">Formas de envío</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="envio.html">Formas de envío</a>
+                    </li>
+                </ul>
+            </div>
             <div>
                 <img src="img/icons/search.png" alt="Buscar">
                 <img src="img/icons/cart.png" alt="Carrito">
             </div>
-            </div>
         </div>
     </nav> <!-- Navbar End -->
+
+    <!-- Second Navbar Start -->
+    <nav class="navbar lightblueColor d-md-block d-lg-none">
+        <div class="container-fluid">
+            <form class="d-flex ms-auto" id="navSearch" role="search">
+                <input class="form-control m-2" type="search" placeholder="" aria-label="Search">
+                <button class="button" type="submit"><img src="img/icons/search.png" alt="Buscar"></button>
+            </form>
+        </div>
+    </nav> <!-- Second Navbar End -->
 
 
     <!-- Title Start -->
@@ -66,33 +76,79 @@
             <h2>Nuestro equipo</h2>
         </div>
 
-        <section class="row mx-1">
-            <div class="cCard wow fadeInDown" data-wow-delay="0.5s" >
-                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
-                <div class="containerPadding">
-                    <h4>Walter Lambert</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="cCard wow fadeInDown m-1" data-wow-delay="0.5s" >
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Walter Lambert</h4>
+                                </div>
+                            </div>
+                            <div class="cCard wow fadeInDown m-1" data-wow-delay="0.7s">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Gene Takavic</h4>
+                                </div>
+                            </div>
+                            <div class="cCard wow fadeInDown m-1" data-wow-delay="0.9s">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Kim Wexler</h4>
+                                </div>
+                            </div>
+                            <div class="cCard wow fadeInDown m-1" data-wow-delay="1.1s">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Esteban Gomez</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="cCard m-1">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Howard Hamlin</h4>
+                                </div>
+                            </div>
+                            <div class="cCard m-1">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Marie Schrader</h4>
+                                </div>
+                            </div>
+                            <div class="cCard m-1">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Kaylee Ehrmantraut</h4>
+                                </div>
+                            </div>
+                            <div class="cCard m-1">
+                                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
+                                <div class="containerPadding">
+                                    <h4>Charles McGill</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cCard wow fadeInDown" data-wow-delay="0.7s">
-                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
-                <div class="containerPadding">
-                    <h4>Gene Takavic</h4>
-                </div>
+            <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
-            <div class="cCard wow fadeInDown" data-wow-delay="0.9s">
-                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
-                <div class="containerPadding">
-                    <h4>Kim Wexler</h4>
-                </div>
-            </div>
-            <div class="cCard wow fadeInDown" data-wow-delay="1.1s">
-                <img src="img/icons/pfp.png" alt="foto de empelado" class="productPic">
-                <div class="containerPadding">
-                    <h4>Esteban Gomez</h4>
-                </div>
-            </div>
-        </section>
-
+        </div>
+        
     </main>
 
     <footer class="wow fadeInUp container-fluid">

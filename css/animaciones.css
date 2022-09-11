@@ -1,7 +1,8 @@
-.scale:hover{
-    transform: scale(1.05);
+nav ul li a:hover{
+    transform: scale(1.02);
     cursor: pointer;
     transition: transform 0.2s;
+    font-weight: 600;
 }
 
 
