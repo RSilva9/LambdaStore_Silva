@@ -1,0 +1,45 @@
+.btnProdsContainer{
+    @include grid(
+        1fr,
+        repeat(2,auto),
+        "nprods" 
+        "btnProds",
+        stretch,
+        center
+    );
+}
+
+#nprods{
+    grid-area: nprods;
+    font-family: $secondaryFont;
+}
+#btnProds{
+    grid-area: btnProds;
+    @include flex(row, center, flex-start, wrap);
+    
+    p{
+        margin-right: 10px;
+    }
+}
+
+.cCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 300px;
+    background-color: white;
+    font-size: $fontsmall;
+    font-family: $secondaryFont;
+    font-weight: $fweightXS;
+    text-align: center;
+  }
+
+.containerPadding{
+    padding: 4px 16px;
+}
+
+.productPic{
+    margin: 20px 0px;
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}

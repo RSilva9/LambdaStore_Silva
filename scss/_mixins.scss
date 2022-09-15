@@ -1,0 +1,23 @@
+@mixin flex($dir, $just, $align, $wrap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($cols, $rows, $area, $just, $al){
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    grid-template-areas: $area;
+    justify-items: $just;
+    align-items: $al;
+}
+
+@mixin bg($color, $pos, $size, $rep){
+    background-color: $color;
+    background-position: $pos;
+    background-size: $size;
+    background-repeat: $rep;
+}

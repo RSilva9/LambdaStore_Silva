@@ -1,0 +1,27 @@
+nav{
+    background-color: $mainColor;
+    font-family: $mainFont;
+    font-size: $fontXS;
+    font-weight: $fweightM;
+    ul{
+        font-family: $mainFont;
+    }
+
+    img{
+        width: 30px;
+    }
+}
+
+#navSearch{
+    button{
+        padding: 0px 15px;
+    }
+}
+
+#titleContainer{
+    @include flex(row, flex-start, center, nowrap);
+    margin-left: 3rem;
+    img{
+        width: 100px;
+    }
+}

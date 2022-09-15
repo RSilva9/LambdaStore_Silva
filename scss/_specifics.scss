@@ -1,0 +1,23 @@
+#contactoForm{
+    form{
+        background: $mainColor;
+        font-family: $secondaryFont;
+        font-size: $fontsmall;
+        font-weight: $fweightXS;
+        padding: 10px;
+        margin: 15px 0px;
+    }
+}
+
+.envioContainer{
+    font-family: $secondaryFont;
+    margin: 0px 4rem;
+    
+    h3{
+        font-size: $fontsmall;
+        font-weight: $fweightXS;
+    }
+    img{
+        width: 100%;
+    }
+}

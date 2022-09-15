@@ -1,0 +1,40 @@
+footer{
+    background-image: url(../img/footerPic.png);
+    @include bg($footerColor, bottom, 100%, no-repeat);
+    font-family: 'Rubik', sans-serif;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+
+    img{
+        width: 50px;
+    }
+}
+.alignContacto{
+    @include flex(row, flex-start, center, nowrap);
+}
+
+.mediosDePagoSize{
+    height: 300px;
+    width: 425px;
+}
+
+.nHeaderContainer{
+    @include flex(column, flex-start, flex-start, nowrap);
+    margin: 2rem 5rem;
+
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: $fontmed;
+        font-weight: $fweightL;
+    }
+    p{
+        font-family: $secondaryFont;
+        font-size: $fontHM;
+        font-weight: $fweightXS;
+        margin-top: 10px;
+    };
+}
