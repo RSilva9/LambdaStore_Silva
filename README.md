@@ -20,4 +20,5 @@ Proyecto tienda online "Lambda Store". Productos de merchandising relacionados a
 - Map para la paleta de colores.
 - Medios de pago del footer eliminados. Reemplazados por versión más simple y parte más detallada en la página de Formas de envío.
 - Extend agregado en el nuevo botón del footer en la sección de Medios de pago.
+- Archivo animaciones.css eliminado y sumado a main.css.
 - Otros cambios y arreglos menores en el código.
