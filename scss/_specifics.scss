@@ -1,6 +1,6 @@
 #contactoForm{
     form{
-        background: $mainColor;
+        background: map-get($map: $paleta, $key: main);
         font-family: $secondaryFont;
         font-size: $fontsmall;
         font-weight: $fweightXS;
@@ -9,15 +9,26 @@
     }
 }
 
-.envioContainer{
+#envioContainer{
     font-family: $secondaryFont;
-    margin: 0px 4rem;
+    margin: 0px;
     
     h3{
         font-size: $fontsmall;
         font-weight: $fweightXS;
     }
-    img{
+
+    div{
+        margin: 20px 0px;
+    }
+
+    [src="img/envio.webp"]{
         width: 100%;
     }
+}
+
+.btnVerMas{
+    @extend .button;
+    background: map-get($map: $paleta, $key: dark);
+    padding: 5px 16px;
 }

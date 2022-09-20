@@ -1,10 +1,18 @@
 nav{
-    background-color: $mainColor;
+    background: map-get($map: $paleta, $key: main);
     font-family: $mainFont;
     font-size: $fontXS;
     font-weight: $fweightM;
     ul{
         font-family: $mainFont;
+        li{
+            a:hover{
+                transform: scale(1.02);
+                cursor: pointer;
+                transition: transform 0.2s;
+                font-weight: 600;
+            }
+        }
     }
 
     img{

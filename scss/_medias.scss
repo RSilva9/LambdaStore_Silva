@@ -19,6 +19,20 @@
     }
 }
 
+/*Desactiva animación fadeInDown de mobile para mejor visualización*/
+@media (max-width: 960px){
+    .fadeInDown{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+
+    #envioContainer{
+        [src="img/mediosDePago.webp"]{
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 615px){
     #titleContainer{
         justify-content: center;

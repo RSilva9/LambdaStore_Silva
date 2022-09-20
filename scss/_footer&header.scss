@@ -1,8 +1,9 @@
 footer{
-    background-image: url(../img/footerPic.png);
-    @include bg($footerColor, bottom, 100%, no-repeat);
+    background-image: url(../img/footerPic.webp);
+    @include bg(map-get($map: $paleta, $key: bg), bottom, 100%, no-repeat);
     font-family: 'Rubik', sans-serif;
     margin-top: 15px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
@@ -10,14 +11,28 @@ footer{
     img{
         width: 50px;
     }
-}
-.alignContacto{
-    @include flex(row, flex-start, center, nowrap);
+
+    h4{
+        font-size: $fontXS;
+    }
 }
 
-.mediosDePagoSize{
-    height: 300px;
-    width: 425px;
+#mPagoContainer{
+    @include flex(column, flex-start, flex-start, nowrap);
+
+    div{
+        @include flex(row, flex-start, flex-start, nowrap);
+    }
+    
+    a{
+        font-family: $secondaryFont;
+        color: rgb(0, 75, 119);
+        text-decoration: none;
+    }
+}
+
+.alignContacto{
+    @include flex(row, flex-start, center, nowrap);
 }
 
 .nHeaderContainer{
