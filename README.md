@@ -13,3 +13,10 @@ Proyecto tienda online "Lambda Store". Productos de merchandising relacionados a
 
 **15/09**
 - Hoja de estilos pasada a SASS.
+
+**20/09**
+- Elementos de SEO agregados.
+- Todas las png fueron convertidas a webp.
+- Map para la paleta de colores.
+- Medios de pago del footer eliminados. Reemplazados por versión más simple y parte más detallada en la página de Formas de envío.
+- Otros cambios y arreglos menores en el código.
