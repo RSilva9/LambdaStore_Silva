@@ -183,6 +183,7 @@ footer h4 {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  margin-left: 10px;
 }
 
 .nHeaderContainer {

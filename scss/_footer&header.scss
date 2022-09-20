@@ -33,6 +33,7 @@ footer{
 
 .alignContacto{
     @include flex(row, flex-start, center, nowrap);
+    margin-left: 10px;
 }
 
 .nHeaderContainer{
