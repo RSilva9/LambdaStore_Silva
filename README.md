@@ -1,6 +1,7 @@
 # LambdaStore_Silva
 
 Proyecto tienda online "Lambda Store". Productos de merchandising relacionados a las producciones de la empresa Valve.
+Link del servidor: https://lambda-store.000webhostapp.com
 
 **05/09**
 - Animaciones agregadas a varios elementos del sitio.
