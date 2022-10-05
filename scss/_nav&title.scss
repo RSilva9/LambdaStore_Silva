@@ -1,5 +1,5 @@
 nav{
-    background: map-get($map: $paleta, $key: main);
+    background: map-get($map: $paleta, $key: nav);
     font-family: $mainFont;
     font-size: $fontXS;
     font-weight: $fweightM;
