@@ -24,3 +24,7 @@ Link del servidor: https://lambda-store.000webhostapp.com
 - Extend agregado en el nuevo botón del footer en la sección de Medios de pago.
 - Archivo animaciones.css eliminado y sumado a main.css.
 - Otros cambios y arreglos menores en el código.
+
+**05/10**
+- Imágenes agregadas a las Cards de la sección "Nuestro equipo".
+- Cambio de opacidad al color de la nav para mejor visualización.
